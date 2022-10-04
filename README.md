@@ -28,8 +28,8 @@
 
 ### List: API, 로컬등의 목록 표시 
 - ListAPIVC: 리스트 형태로 검색 목록 표시
-- ListLocalVC: 헤더 형식으로 정렬 및 목록 표시
-- ListCell 검색된 항목에 한 단위 대한 표시
+- ListLocalVC: 헤더 리스트 형식으로 정렬 및 목록 표시
+- ListCell 검색된 항목에 한 단위 대한 표시, 즐겨찾기 처리
 
 ### ViewController:
 - 각 항목들에 대한 연결 및 탭의 관리
