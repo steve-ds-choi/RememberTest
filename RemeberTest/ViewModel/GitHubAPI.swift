@@ -64,7 +64,7 @@ class GitHubAPI {
         
         var request = URLRequest(url: url)
         if token.count > 0 {
-            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            request.setValue("Bearer ghp_" + token, forHTTPHeaderField: "Authorization")
         }
         request.setValue("application/vnd.github+json", forHTTPHeaderField: "Accept")
 

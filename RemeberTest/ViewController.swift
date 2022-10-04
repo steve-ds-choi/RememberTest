@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     func viewDidLoad() {
         super.viewDidLoad()
 
-        GitHubAPI.shared.token = "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"
+        GitHubAPI.shared.token = "u6BwASIDCoMYxNMW0HOZHQoQtNfUpm16cBZL"
 
         loadHead()
         loadBody()
