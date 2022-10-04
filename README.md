@@ -26,13 +26,14 @@
 - RTabs : 탭 컨트롤 
 - HeadVC: 탭과 검색항목 관리
 
-### List: API, 로컬 목록에 대한처리
+### List: API, 로컬등의 목록 표시 
 - ListAPIVC: 리스트 형태로 검색 목록 표시
 - ListLocalVC: 헤더 형식으로 정렬 및 목록 표시
-- ListCell 검색된 항목에 대한 표시
+- ListCell 검색된 항목에 한 단위 대한 표시
 
 ### ViewController:
 - 각 항목들에 대한 연결 및 탭의 관리
+- Subscriber 처리
 
 ## 향후 개선 사항 
 - Autoresize 부분을 Autolayout으로 개선 - SnapKit 사용
