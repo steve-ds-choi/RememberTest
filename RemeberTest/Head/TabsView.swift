@@ -1,5 +1,5 @@
 //
-//  RTabs.swift
+//  TabsView.swift
 //  RemeberTest
 //
 //  Created by steve on 2022/10/01.
@@ -20,7 +20,7 @@ class Item {
     }
 }
 
-class RTabs: UIView {
+class TabsView: UIView {
 
     private var items = [Item]()
 

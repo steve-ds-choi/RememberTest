@@ -13,7 +13,7 @@ class ListViewController: UIViewController {
     lazy var listView = UITableView().then {
         $0.frame = view.bounds
         view.addSubview($0)
-        $0.registerCell(ListCell.self)
+        $0.register(cell: ListCell.self)
         $0.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 530, right: 0)
     }
 

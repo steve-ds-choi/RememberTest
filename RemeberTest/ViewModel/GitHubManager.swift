@@ -17,7 +17,7 @@ class GitHubManager {
     @Published var list = [ListItem]()
 
     var searchMode = SearchMode.Network
-    
+
     private var names      = [String:String]()
     private var cancelBag  = Set<AnyCancellable>()
     private var namesBag   = [Int:AnyCancellable]()

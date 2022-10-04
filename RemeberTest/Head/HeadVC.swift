@@ -10,7 +10,7 @@ import Combine
 
 class HeadVC: UIViewController {
 
-    @IBOutlet weak var tabs: RTabs!
+    @IBOutlet weak var tabs: TabsView!
     @IBOutlet weak var textField: UITextField!
 
     var tapsPublisher: AnyPublisher<Int, Never>    {

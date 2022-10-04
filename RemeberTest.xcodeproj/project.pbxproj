@@ -25,7 +25,7 @@
 		EB946B6D28E6DAA200127BD9 /* HeadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB946B6B28E6DAA200127BD9 /* HeadVC.xib */; };
 		EB946B7828E6ECF600127BD9 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB946B7728E6ECF600127BD9 /* UIView+Ex.swift */; };
 		EB946B7A28E7FE5100127BD9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB946B7928E7FE5100127BD9 /* ListViewController.swift */; };
-		EB946B8128E82B8300127BD9 /* RTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB946B8028E82B8300127BD9 /* RTabs.swift */; };
+		EB946B8128E82B8300127BD9 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB946B8028E82B8300127BD9 /* TabsView.swift */; };
 		EB946B8328E9267800127BD9 /* Control+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB946B8228E9267800127BD9 /* Control+Ex.swift */; };
 		EB946B8828E9453D00127BD9 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB946B8628E9453D00127BD9 /* ListCell.swift */; };
 		EB946B8928E9453D00127BD9 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB946B8728E9453D00127BD9 /* ListCell.xib */; };
@@ -53,7 +53,7 @@
 		EB946B6B28E6DAA200127BD9 /* HeadVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadVC.xib; sourceTree = "<group>"; };
 		EB946B7728E6ECF600127BD9 /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
 		EB946B7928E7FE5100127BD9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		EB946B8028E82B8300127BD9 /* RTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTabs.swift; sourceTree = "<group>"; };
+		EB946B8028E82B8300127BD9 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		EB946B8228E9267800127BD9 /* Control+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Control+Ex.swift"; sourceTree = "<group>"; };
 		EB946B8628E9453D00127BD9 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		EB946B8728E9453D00127BD9 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		EB946B6628E6DA3000127BD9 /* Head */ = {
 			isa = PBXGroup;
 			children = (
-				EB946B8028E82B8300127BD9 /* RTabs.swift */,
+				EB946B8028E82B8300127BD9 /* TabsView.swift */,
 				EB946B6A28E6DAA200127BD9 /* HeadVC.swift */,
 				EB946B6B28E6DAA200127BD9 /* HeadVC.xib */,
 			);
@@ -254,7 +254,7 @@
 				EB946B5928E689B700127BD9 /* GitHubAPI.swift in Sources */,
 				EB946B3C28E6872E00127BD9 /* SceneDelegate.swift in Sources */,
 				EB946B8328E9267800127BD9 /* Control+Ex.swift in Sources */,
-				EB946B8128E82B8300127BD9 /* RTabs.swift in Sources */,
+				EB946B8128E82B8300127BD9 /* TabsView.swift in Sources */,
 				EB946B6228E697CF00127BD9 /* GitHubManager.swift in Sources */,
 				EB946B7828E6ECF600127BD9 /* UIView+Ex.swift in Sources */,
 			);

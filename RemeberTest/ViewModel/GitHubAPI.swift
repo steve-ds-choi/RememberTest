@@ -109,7 +109,7 @@ extension GitHubAPI {
         let objs = Array(stars.values)
             .filter { name.count == 0 || $0.name.contains(name) }
             .sorted { $0.name < $1.name }
-        
+
         return Just(objs).eraseToAnyPublisher()
     }
 

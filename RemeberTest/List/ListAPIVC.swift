@@ -25,7 +25,7 @@ extension ListAPIVC: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = list[indexPath.row]
-        let cell = tableView.dequeueCell(ListCell.self)
+        let cell = tableView.dequeue(cell: ListCell.self)
 
         cell.load(item, strongText: text)
 
