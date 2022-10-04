@@ -11,7 +11,7 @@ import Combine
 extension UIControl {
 
     func controlPublisher(for event: UIControl.Event) -> UIControl.EventPublisher {
-        return UIControl.EventPublisher(control: self, event: event)
+        UIControl.EventPublisher(control: self, event: event)
     }
 
     // Publisher
@@ -50,7 +50,8 @@ extension UIControl {
             control.removeTarget(self, action: #selector(eventDidOccur), for: event)
         }
 
-        @objc func eventDidOccur() {
+        @objc
+        func eventDidOccur() {
             _ = subscriber?.receive(control)
         }
     }
@@ -80,14 +81,14 @@ extension UITextField {
 
 extension UITableView {
 
-    func registerCell<T>(_ cls: T.Type) where T: UITableViewCell {
-        let name = "\(cls)"
+    func register<T>(cell: T.Type) where T: UITableViewCell {
+        let name = "\(cell)"
         let nib = UINib(nibName:name, bundle:nil)
         register(nib, forCellReuseIdentifier: name)
     }
 
-    func dequeueCell<T>(_ cls: T.Type) -> T {
-        let name = "\(cls)"
+    func dequeue<T>(cell: T.Type) -> T {
+        let name = "\(cell)"
         let cell = dequeueReusableCell(withIdentifier: name)!
         cell.selectionStyle = .none
 

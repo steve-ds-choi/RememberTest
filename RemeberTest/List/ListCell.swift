@@ -12,9 +12,9 @@ class ListCell: UITableViewCell {
 
     @IBOutlet weak var ivThumb: UIImageView!
     @IBOutlet weak var lbLabel: UILabel!
-    @IBOutlet weak var btStar: UIButton!
+    @IBOutlet weak var btStar:  UIButton!
 
-    var item: ListItem!
+    private var item: ListItem!
 
     func load(_ item: ListItem, strongText: String) {
         self.item = item

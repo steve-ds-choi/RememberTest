@@ -9,7 +9,7 @@ import UIKit
 
 class ListLocalVC: ListViewController {
 
-    var lists = [[String:[ListItem]]]()
+    private var lists = [[String:[ListItem]]]()
 
     override
     func viewDidLoad() {
@@ -74,7 +74,7 @@ extension ListLocalVC: UITableViewDelegate, UITableViewDataSource {
         let list = getList(indexPath.section)
         let item = list[indexPath.row]
 
-        let cell = tableView.dequeueCell(ListCell.self)
+        let cell = tableView.dequeue(cell: ListCell.self)
         cell.load(item, strongText: text)
 
         return cell

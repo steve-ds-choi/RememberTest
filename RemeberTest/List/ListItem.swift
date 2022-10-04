@@ -14,8 +14,6 @@ class ListItem {
     var login  = ""
     var isStar = false
 
-    var obj: ItemObj!
-
     var avartarURL: URL {
         "https://avatars.githubusercontent.com/u/\(id)?v=4".asURL
     }
@@ -28,8 +26,6 @@ class ListItem {
     }
 
     init(obj: ItemObj, name: String!) {
-        self.obj    = obj
-
         self.login  = obj.login
         self.id     = obj.id!
         self.name   = name ?? ""
