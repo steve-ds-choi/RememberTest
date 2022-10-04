@@ -9,11 +9,7 @@
 
 ## 작업 체크 사항
 [X] 
-[X] 
-[X] 
-[X] 
-[X] 
-[X] 
+
 
 
 ## Architecture - MVVM을 기본으로 작업
