@@ -7,9 +7,28 @@
 3. 로컬 저장항목중 "최"를 검색한 화면
 
 
-## 작업 체크 사항
-[x] 
+## 작업 체크 사항 - 드라마앤컴퍼니(리멤버)_iOS_과제.pdf
+### 기본 사항
+- [x] Target OS 버전 - 13.0
+- [x] SwiftUI가 아닌 UIKit로 구현
+- [x] Device Orientation지원은 Portrait
+- [x] 코드 작업은 Swift로만 작성
+- [x] Xcode와 Swift버전은 최신 버전 - Xcode 14.0.1
+- [x] github의 open api를 활용하여 사용자를 검색하고, 즐겨찾기 관리
+  - https://docs.github.com/en/rest/search#search-users
+  - https://docs.github.com/en/rest/users/users#get-a-user
+- [x] 즐겨찾기 목록에 추가/제거 - 앱을 삭제하기 전까지 영구적으로 저장 - Realm으로 구성
+- [x] 검색어 종류는 사용자의 이름으로 제한
 
+### API 검색화면
+- [x] 사용자의 목록을 출력 - 정렬은 API 응답 그대로 반영
+- [x] 아이템뷰는 프로필 이미지, 사용자 이름, 즐겨찾기 여부 확인
+- [x] 아이템뷰는 즐겨찾기의 추가, 제거 할수 있느 버튼 제공 - Tap시 화면에 갱신 및 즐겨찾기 반영
+
+### 로컬 즐겨찾기 검색화면
+- [x] 아이템뷰는 API 검색화면과 동일
+- [x] 즐겨찾기 목록은 이름순으로 정렬
+- [x] 이름의 맨 앞글자(초성)를 기준으로 변화가 있는곳에 Header를 보여줍니다.
 
 
 ## Architecture - MVVM을 기본으로 작업
@@ -30,11 +49,11 @@
 - HeadVC: 탭과 검색항목 관리
 
 ### List: API, 로컬등의 목록 표시 
-- ListAPIVC: 리스트 형태로 검색 목록 표시
-- ListLocalVC: 헤더 리스트 형식으로 정렬 및 목록 표시
-- ListCell 검색된 항목에 한 단위 대한 표시, 즐겨찾기 처리
+- ListAPIVC:   "API 검색화면" 표시 - 리스트 형태
+- ListLocalVC: "로컬 즐겨찾기 검색화면" 표시 - 헤더 리스트 형식으로 정렬 및 목록 표시
+- ListCell:    "아이템 뷰" 표시 - 프로필 이미지, 사용자 이름, 즐겨찾기 여부 확인
 
-### ViewController:
+### ViewController: 화면 전체에 대한 표시
 - 각 항목들에 대한 연결 및 탭의 관리
 - Subscriber 처리
 
