@@ -45,7 +45,7 @@
 - GitHubWrapper: 이름을 받아오기 위한 기본구조 -> Kingfisher와 같은 (label.gh.setName)
 
 ### Head: 상위 탭과 검색입력에 대한처리
-- RTabs : 탭 컨트롤 
+- TabsView : 탭 컨트롤 
 - HeadVC: 탭과 검색항목 관리
 
 ### List: API, 로컬등의 목록 표시 
